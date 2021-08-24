@@ -45,5 +45,15 @@ def collect_diamonds():
     pyautogui.write("cmc", interval=0.25)
     pyautogui.press("enter")
 
+    # this part clicks on the diamonds button
+    pyautogui.moveTo(1308, 116)
+    time.sleep(0.5)
+    pyautogui.click()
+
+    # this part clicks on the "collect diamonds" button
+    pyautogui.moveTo(1500, 680)
+    time.sleep(0.5)
+    pyautogui.click()
+
 
 collect_diamonds()
