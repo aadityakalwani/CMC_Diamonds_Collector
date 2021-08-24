@@ -62,6 +62,8 @@ def collect_diamonds():
     time.sleep(0.5)
     pyautogui.click()
 
+    print("cool, done")
+
 
 collect_diamonds()
 
