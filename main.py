@@ -36,9 +36,9 @@ import pyautogui
 
 
 def collect_diamonds():
-    print("this has begun")
 
     # this part opens coinmarketcap
+    time.sleep(0.25)
     pyautogui.keyDown("command")
     pyautogui.press("space")
     pyautogui.keyUp("command")
@@ -46,14 +46,23 @@ def collect_diamonds():
     pyautogui.press("enter")
 
     # this part clicks on the diamonds button
+    time.sleep(0.25)
     pyautogui.moveTo(1308, 116)
     time.sleep(0.5)
     pyautogui.click()
 
     # this part clicks on the "collect diamonds" button
+    time.sleep(0.25)
     pyautogui.moveTo(1500, 680)
+    time.sleep(0.5)
+    pyautogui.click()
+
+    # this part closes the popup window
+    pyautogui.moveTo(800, 660)
     time.sleep(0.5)
     pyautogui.click()
 
 
 collect_diamonds()
+
+# had a random cool idea, will eventually use b3ar's google home type jarvis thingy to have a morning routine which will have this as part of it
